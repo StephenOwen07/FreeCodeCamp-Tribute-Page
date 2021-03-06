@@ -1,0 +1,48 @@
+.Hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @include respond (md) {
+    flex-direction: row;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 6rem;
+    font-weight: 900;
+
+    @include respond (sm) {
+      // font-size: 8rem;
+    }
+    @include respond (md) {
+      // font-size: 10rem;
+    }
+  }
+
+  &__subtitle {
+    max-width: 90%;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.5;
+
+    @include respond (sm) {
+      // max-width: 80%;
+      // font-size: 2rem;
+    }
+    @include respond (sm) {
+      max-width: 60%;
+      font-size: 2rem;
+    }
+  }
+}
+

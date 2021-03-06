@@ -1,3 +1,12 @@
+/*
+
+576px: sm
+768px: md
+992px: lg
+1200px: xl
+1400px: > xxl 
+
+*/
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -21,3 +30,76 @@ body {
 img {
   max-width: 100%;
   height: auto; }
+
+.Button {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  border-radius: 6px;
+  padding: 10px 24px;
+  background: #3D50FA;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 0 5px #3D50FA, 0 0 5px #3D50FA inset;
+  box-shadow: 0 0 5px #3D50FA, 0 0 5px #3D50FA inset; }
+  .Button:hover {
+    background: #2E3CB8; }
+
+.Section {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.Hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .Hero {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+  .Hero__text-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 50px; }
+  .Hero__title {
+    margin-bottom: 10px;
+    font-size: 6rem;
+    font-weight: 900; }
+  .Hero__subtitle {
+    max-width: 90%;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.5; }
+    @media only screen and (min-width: 576px) {
+      .Hero__subtitle {
+        max-width: 60%;
+        font-size: 2rem; } }
