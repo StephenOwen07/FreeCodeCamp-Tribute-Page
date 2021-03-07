@@ -12,7 +12,9 @@
   }
 
   @include respond (md) {
-      max-width: 720px;
+    max-width: 720px;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
   @include respond (lg) {
     max-width: 960px;

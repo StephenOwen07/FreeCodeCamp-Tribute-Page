@@ -63,7 +63,9 @@ img {
       max-width: 540px; } }
   @media only screen and (min-width: 768px) {
     .Section {
-      max-width: 720px; } }
+      max-width: 720px;
+      padding-bottom: 80px;
+      padding-top: 80px; } }
   @media only screen and (min-width: 992px) {
     .Section {
       max-width: 960px; } }
@@ -118,6 +120,9 @@ img {
     @media only screen and (min-width: 576px) {
       .Hero__title {
         font-size: 8rem; } }
+    @media only screen and (min-width: 992px) {
+      .Hero__title {
+        font-size: 10rem; } }
   .Hero__subtitle {
     max-width: 90%;
     margin-bottom: 40px;
@@ -139,3 +144,6 @@ img {
     justify-content: center; }
   .Hero__img {
     max-width: 50%; }
+    @media only screen and (min-width: 768px) {
+      .Hero__img {
+        max-width: 100%; } }
