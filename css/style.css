@@ -113,6 +113,11 @@ img {
         align-items: flex-start;
         text-align: left;
         margin-bottom: 0; } }
+    @media only screen and (min-width: 992px) {
+      .Hero__text-wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }
   .Hero__title {
     margin-bottom: 10px;
     font-size: 6rem;
@@ -121,6 +126,10 @@ img {
       .Hero__title {
         font-size: 8rem; } }
     @media only screen and (min-width: 992px) {
+      .Hero__title {
+        margin-bottom: 0;
+        font-size: 9rem; } }
+    @media only screen and (min-width: 1200px) {
       .Hero__title {
         font-size: 10rem; } }
   .Hero__subtitle {
@@ -132,6 +141,9 @@ img {
     @media only screen and (min-width: 576px) {
       .Hero__subtitle {
         font-size: 2rem; } }
+    @media only screen and (min-width: 1200px) {
+      .Hero__subtitle {
+        max-width: 500px; } }
   .Hero__img-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,3 +159,26 @@ img {
     @media only screen and (min-width: 768px) {
       .Hero__img {
         max-width: 100%; } }
+
+.Quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media only screen and (min-width: 576px) {
+    .Quote {
+      padding-bottom: 50px;
+      padding-top: 50px; } }
+  .Quote__text {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center; }
+    @media only screen and (min-width: 576px) {
+      .Quote__text {
+        font-size: 1.6rem; } }

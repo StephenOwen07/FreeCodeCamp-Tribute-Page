@@ -1,0 +1,21 @@
+.Quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond (sm) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  &__text {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  
+    @include respond (sm) {
+      font-size: 1.6rem;
+      }
+  }
+}
