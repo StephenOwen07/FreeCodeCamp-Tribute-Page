@@ -4,8 +4,23 @@
   margin-right: auto;
   padding-left: 14px;
   padding-right: 14px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 
+  @include respond (sm) {
+    max-width: 540px;
+  }
 
+  @include respond (md) {
+      max-width: 720px;
+  }
+  @include respond (lg) {
+    max-width: 960px;
+  }
+  @include respond (xl) {
+    max-width: 1140px;
+  }
+  @include respond (xxl) {
+    max-width: 1320px;
+  }
 }

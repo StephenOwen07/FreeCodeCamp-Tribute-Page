@@ -56,8 +56,23 @@ img {
   margin-right: auto;
   padding-left: 14px;
   padding-right: 14px;
-  padding-bottom: 30px;
-  padding-top: 30px; }
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  @media only screen and (min-width: 576px) {
+    .Section {
+      max-width: 540px; } }
+  @media only screen and (min-width: 768px) {
+    .Section {
+      max-width: 720px; } }
+  @media only screen and (min-width: 992px) {
+    .Section {
+      max-width: 960px; } }
+  @media only screen and (min-width: 1200px) {
+    .Section {
+      max-width: 1140px; } }
+  @media only screen and (min-width: 1400px) {
+    .Section {
+      max-width: 1320px; } }
 
 .Hero {
   display: -webkit-box;
@@ -66,8 +81,7 @@ img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  text-align: center; }
+  flex-direction: column; }
   @media only screen and (min-width: 768px) {
     .Hero {
       -webkit-box-orient: horizontal;
@@ -88,11 +102,22 @@ img {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .Hero__text-wrapper {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 0; } }
   .Hero__title {
     margin-bottom: 10px;
     font-size: 6rem;
     font-weight: 900; }
+    @media only screen and (min-width: 576px) {
+      .Hero__title {
+        font-size: 8rem; } }
   .Hero__subtitle {
     max-width: 90%;
     margin-bottom: 40px;
@@ -101,5 +126,16 @@ img {
     line-height: 1.5; }
     @media only screen and (min-width: 576px) {
       .Hero__subtitle {
-        max-width: 60%;
         font-size: 2rem; } }
+  .Hero__img-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .Hero__img {
+    max-width: 50%; }

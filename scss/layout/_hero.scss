@@ -1,7 +1,6 @@
 .Hero {
   display: flex;
   flex-direction: column;
-  text-align: center;
 
   @include respond (md) {
     flex-direction: row;
@@ -13,6 +12,13 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 50px;
+    text-align: center;
+
+    @include respond (md) {
+      align-items: flex-start;
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -21,7 +27,7 @@
     font-weight: 900;
 
     @include respond (sm) {
-      // font-size: 8rem;
+      font-size: 8rem;
     }
     @include respond (md) {
       // font-size: 10rem;
@@ -36,13 +42,20 @@
     line-height: 1.5;
 
     @include respond (sm) {
-      // max-width: 80%;
-      // font-size: 2rem;
-    }
-    @include respond (sm) {
-      max-width: 60%;
+      // max-width: 60%;
       font-size: 2rem;
     }
+  }
+
+  &__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    max-width: 50%;
+  
   }
 }
 
