@@ -92,12 +92,15 @@ img {
     padding: 0 10px;
     text-align: center; }
   .Card__title {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.8rem; }
   .Card__text {
     margin-top: 10px;
     font-size: 1.4rem;
     font-weight: 300; }
+    @media only screen and (min-width: 992px) {
+      .Card__text {
+        font-size: 1.6rem; } }
   .Card:last-child {
     margin-bottom: 0; }
   @media only screen and (min-width: 768px) {
@@ -264,6 +267,9 @@ img {
     @media only screen and (min-width: 576px) {
       .Quote__text {
         font-size: 1.6rem; } }
+    @media only screen and (min-width: 992px) {
+      .Quote__text {
+        font-size: 1.8rem; } }
 
 .Timeline {
   display: -webkit-box;
@@ -323,6 +329,7 @@ img {
   .TributeInfo__img {
     margin-bottom: 20px; }
   .TributeInfo__img-caption {
+    max-width: 1000px;
     margin-bottom: 70px;
     font-size: 1.4rem;
     font-weight: 300;
@@ -331,3 +338,51 @@ img {
     @media only screen and (min-width: 768px) {
       .TributeInfo__img-caption {
         font-size: 1.6rem; } }
+
+.Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+  .Footer__svg-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+  .Footer__svg {
+    height: auto;
+    width: 70%; }
+    .Footer__svg g {
+      fill: #bdbdbd;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .Footer__svg:hover g {
+      fill: #fff; }
+  .Footer__copywright {
+    color: #bdbdbd;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    line-height: 0.4; }
+    @media only screen and (min-width: 768px) {
+      .Footer__copywright {
+        font-size: 1.4rem; } }
+  .Footer__copywright-link {
+    color: #bdbdbd;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+    .Footer__copywright-link:hover {
+      color: #fff; }

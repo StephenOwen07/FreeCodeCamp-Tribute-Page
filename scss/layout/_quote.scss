@@ -17,5 +17,9 @@
     @include respond (sm) {
       font-size: 1.6rem;
       }
+
+      @include respond (lg) {
+        font-size: 1.8rem;
+        }
   }
 }
