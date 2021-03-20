@@ -1,10 +1,10 @@
 #FreeCodeCamp - Build a Tribute Page
 Build a tribute page with HTML and CSS which fulfills to following user stories:
 
-#####User Story #1:
+##### User Story #1:
  My tribute page should have an element with a corresponding id="main", which contains all other elements.
 
-#####User Story #2: 
+##### User Story #2: 
 I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
 
 ##### User Story #3:
