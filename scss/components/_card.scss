@@ -1,0 +1,92 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 300px;
+  width: 224px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  background-color: $color-secondary-dark;
+
+  &__img-wrapper {
+    overflow: hidden; 
+    height: 60%;
+  }
+
+  &__img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40%;
+    padding: 0 10px;
+    text-align: center;
+    }
+
+    &__title {
+      margin-top: 20px;
+      font-size: 1.8rem;
+    }
+
+    &__text {
+      margin-top: 10px;
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+      
+    &::after {
+
+      @include respond (md) {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background-color: $color-primary-blue;
+        box-shadow:  0 0 5px $color-primary-blue,  0 0 5px $color-primary-blue inset;
+      }
+    }
+
+    &:nth-child(even) {
+
+      @include respond (md) {
+       position: relative;
+       left:200px;
+      }
+
+      &::after {
+        @include respond (md) {
+          transform: translate(-50%, -50%);
+          left:-88px;
+         }
+      }
+    }
+
+    &:nth-child(odd) {
+      
+      @include respond (md) {
+       position: relative;
+       right:200px;
+      }
+
+      &::after {
+        @include respond (md) {
+          transform: translate(50%, -50%);
+          right:-88px;
+         }
+      }
+    }
+}
