@@ -1,4 +1,4 @@
-#FreeCodeCamp - Build a Tribute Page
+# FreeCodeCamp - Build a Tribute Page
 Build a tribute page with HTML and CSS which fulfills to following user stories:
 
 ##### User Story #1:
