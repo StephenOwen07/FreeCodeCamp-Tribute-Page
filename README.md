@@ -1,18 +1,13 @@
 # FreeCodeCamp - Build a Tribute Page
----
 ## Objective:
 Build a CodePen.io app that is functionally similar to this: [FCC Tribute Page](https://codepen.io/freeCodeCamp/full/zNqgVx).
 
 * [See Tribute Page](https://stephenowen07.github.io/FreeCodeCamp-Tribute-Page/)
 
----
-
-
 
 ## Rules:
 1. You can use HTML, JavaScript, and CSS to complete this project. 
 2. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. 
----
 
 ## User Stories:
 
